@@ -39,7 +39,7 @@ h4 {
 }
 
 .header {
-  background-image: url(/src/images/header_bg.png);
+  background-image: url(./src/images/header_bg.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -467,7 +467,7 @@ h4 {
 }
 .about__block {
   margin-bottom: 203px;
-  background-image: url(/src/images/square.png);
+  background-image: url(./src/images/square.png);
   background-size: contain;
   height: 499px;
   width: 526px;
@@ -996,6 +996,7 @@ h4 {
   }
 }
 .education__title {
+  overflow-y: hidden;
   margin-bottom: 30px;
   font-family: Roboto;
   font-size: 48px;
@@ -1039,7 +1040,7 @@ h4 {
   }
 }
 .education__timeline {
-  content: url("/src/images/timeline.png");
+  content: url(./src/images/timeline.png);
 }
 .education__block {
   display: flex;
@@ -1204,6 +1205,7 @@ h4 {
   }
 }
 .mentors__title {
+  overflow-y: hidden;
   margin-left: 38px;
   margin-bottom: 113px;
   display: inline-block;
@@ -1363,6 +1365,7 @@ h4 {
   }
 }
 .subscribe__title {
+  overflow-y: hidden;
   margin-bottom: 30px;
   font-family: Roboto;
   font-size: 48px;

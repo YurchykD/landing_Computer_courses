@@ -27,6 +27,7 @@
   }
 
   &__title {
+    overflow-y: hidden;
     margin-bottom: 30px;
     font-family: Roboto;
     font-size: 48px;
@@ -68,7 +69,7 @@
   }
 
   &__timeline {
-    content: url("/src/images/timeline.png");
+    content: url(./src/images/timeline.png);
   }
 
   &__block {
