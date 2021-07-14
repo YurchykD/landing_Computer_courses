@@ -1,0 +1,136 @@
+.start {
+  width: 1300px;
+  margin: 0 auto 200px;
+
+  @media (min-width: $small-min-width) and (max-width: $small-max-width) {
+    margin: 0 auto 0;
+    width: 280px;
+  }
+
+  @media (min-width: $medium-min-width) and (max-width: $medium-max-width) {
+    margin: 0 auto 0;
+    width: 700px;
+  }
+
+  &__logo-img {
+    @media (min-width: $small-min-width) and (max-width: $small-max-width) {
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  &__title {
+    padding-left: 20px;
+    font-family: Roboto;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 67px;
+    text-align: left;
+    color: white;
+
+    @media (min-width: $small-min-width) and (max-width: $small-max-width) {
+      font-size: 28px;
+      line-height: 28px;
+    }
+
+    @media (min-width: $medium-min-width) and (max-width: $medium-max-width) {
+      font-size: 40px;
+      line-height: 67px;
+    }
+  }
+
+  &__description {
+    width: 411px;
+    margin-top: 50px;
+    margin-bottom: 80px;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: left;
+    color: rgba(255, 255, 255, 0.5);
+
+    @media (min-width: $small-min-width) and (max-width: $small-max-width) {
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+  }
+
+  &__cards {
+    display: flex;
+
+    @media (min-width: $small-min-width) and (max-width: $small-max-width) {
+      flex-direction: column;
+    }
+
+    @media (min-width: $medium-min-width) and (max-width: $medium-max-width) {
+      width: 700px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    width: 324px;
+
+    @media (min-width: $small-min-width) and (max-width: $small-max-width) {
+      margin-bottom: 35px;
+    }
+
+    @media (min-width: $medium-min-width) and (max-width: $medium-max-width) {
+      margin-bottom: 70px;
+    }
+
+    &-status {
+      margin-bottom: 20px;
+      color: white;
+      font-family: Roboto;
+      font-size: 36px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 50px;
+      text-align: left;
+
+      @media (min-width: $small-min-width) and (max-width: $small-max-width) {
+        margin-bottom: 10px;
+        font-size: 28px;
+        line-height: 28px;
+      }
+    }
+
+    &-visual {
+      width: 324px;
+      height: 80px;
+      background: linear-gradient(94.26deg, #c89afc 9.51%, #7c6afa 90.23%);
+
+      &--2 {
+        margin-top: 10px;
+        height: 60px;
+      }
+
+      &--3 {
+        margin-top: 25px;
+        height: 30px;
+      }
+
+      &--4 {
+        margin-top: 35px;
+        height: 10px;
+      }
+    }
+
+    &-article {
+      margin-top: 35px;
+      width: 280px;
+      color: rgba(255, 255, 255, 0.5);
+
+      @media (min-width: $small-min-width) and (max-width: $small-max-width) {
+        margin-top: 15px;
+      }
+    }
+  }
+}

@@ -1,0 +1,209 @@
+.education {
+  margin: 0 auto 231px;
+  align-items: center;
+  text-align: center;
+  width: 1300px;
+
+  @media (min-width: $small-min-width) and (max-width: $small-max-width) {
+    margin: 0 auto 100px;
+    width: 280px;
+  }
+
+  @media (min-width: $medium-min-width) and (max-width: $medium-max-width) {
+    margin: 0 auto 200px;
+    width: 700px;
+  }
+
+  &__logo {
+    height: 44px;
+    width: 90px;
+    margin-bottom: 76px;
+
+    @media (min-width: $small-min-width) and (max-width: $small-max-width) {
+      height: 34px;
+      width: 70px;
+      margin-bottom: 46px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 30px;
+    font-family: Roboto;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 67px;
+    text-align: center;
+    color: white;
+
+    @media (min-width: $small-min-width) and (max-width: $small-max-width) {
+      font-size: 25px;
+      line-height: 27px;
+    }
+    @media (min-width: $medium-min-width) and (max-width: $medium-max-width) {
+      font-size: 40px;
+      line-height: 50px;
+    }
+  }
+
+  &__article {
+    margin: 0 auto 80px;
+    align-items: center;
+    text-align: center;
+    width: 411px;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.5);
+
+    @media (min-width: $small-min-width) and (max-width: $small-max-width) {
+      width: 280px;
+      margin: 0 auto 60px;
+      font-size: 12px;
+      line-height: 16px;
+    }
+  }
+
+  &__timeline {
+    content: url("/src/images/timeline.png");
+  }
+
+  &__block {
+    display: flex;
+    justify-content: center;
+    &-left {
+      .card {
+        margin-bottom: 95px;
+        &__title {
+          margin-right: 60px;
+          font-family: Roboto;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 22px;
+          text-align: right;
+          color: rgba(255, 255, 255, 0.5);
+
+          @media (min-width: $small-min-width) and (max-width: $small-max-width) {
+            margin-bottom: 5px;
+            margin-right: 30px;
+            font-size: 12px;
+            line-height: 16px;
+          }
+        }
+        &__article {
+          display: inline-block;
+          width: 340px;
+          font-family: Roboto;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 29px;
+          text-align: right;
+          color: white;
+          transition: transform 0.3s linear;
+
+          &:hover {
+            cursor: pointer;
+            transform: scale(1.1);
+          }
+
+          @media (min-width: $small-min-width) and (max-width: $small-max-width) {
+            font-size: 14px;
+            line-height: 19px;
+            width: 100px;
+          }
+
+          @media (min-width: $medium-min-width) and (max-width: $medium-max-width) {
+            width: 240px;
+          }
+
+          &-line {
+            display: inline-block;
+            margin-left: 20px;
+            width: 40px;
+            height: 0;
+            opacity: 0.3;
+            border: 1px solid #ffffff;
+            transform: rotate(180deg);
+
+            @media (min-width: $small-min-width) and (max-width: $small-max-width) {
+              margin-left: 5px;
+              width: 20px;
+            }
+          }
+        }
+      }
+    }
+
+    &-right {
+      .card {
+        margin-top: 97px;
+        margin-bottom: 95px;
+        &__title {
+          margin-left: 60px;
+          font-family: Roboto;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 22px;
+          text-align: left;
+          color: rgba(255, 255, 255, 0.5);
+
+          @media (min-width: $small-min-width) and (max-width: $small-max-width) {
+            margin-bottom: 5px;
+            margin-left: 30px;
+            font-size: 12px;
+            line-height: 16px;
+          }
+        }
+
+        &__article {
+          display: inline-block;
+          width: 340px;
+          font-family: Roboto;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 29px;
+          text-align: left;
+          color: white;
+          transition: transform 0.3s linear;
+
+          &:hover {
+            cursor: pointer;
+            transform: scale(1.1);
+          }
+
+          @media (min-width: $small-min-width) and (max-width: $small-max-width) {
+            font-size: 14px;
+            line-height: 19px;
+            width: 100px;
+          }
+
+          @media (min-width: $medium-min-width) and (max-width: $medium-max-width) {
+            width: 240px;
+          }
+
+          &-line {
+            display: inline-block;
+            margin-right: 20px;
+            width: 40px;
+            height: 0;
+            opacity: 0.3;
+            border: 1px solid #ffffff;
+            transform: rotate(180deg);
+
+            @media (min-width: $small-min-width) and (max-width: $small-max-width) {
+              margin-right: 5px;
+              width: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

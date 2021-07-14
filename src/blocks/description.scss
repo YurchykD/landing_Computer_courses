@@ -1,0 +1,120 @@
+.description {
+  width: 1300px;
+  margin: 0 auto 231px;
+
+  @media (min-width: $small-min-width) and (max-width: $small-max-width) {
+    width: 280px;
+    margin: 0 auto 101px;
+  }
+
+  @media (min-width: $medium-min-width) and (max-width: $medium-max-width) {
+    width: 700px;
+    margin: 0 auto 131px;
+  }
+
+  &__title {
+    margin-bottom: 100px;
+    font-family: Roboto;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 67px;
+    text-align: center;
+    color: white;
+
+    @media (min-width: $small-min-width) and (max-width: $small-max-width) {
+      font-size: 30px;
+      line-height: 37px;
+      margin-bottom: 60px;
+    }
+
+    @media (min-width: $medium-min-width) and (max-width: $medium-max-width) {
+      font-size: 40px;
+      margin-bottom: 80px;
+    }
+  }
+
+  &__cards {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+    @media (min-width: $small-min-width) and (max-width: $small-max-width) {
+      flex-direction: column;
+    }
+  }
+
+  &__card {
+    width: 358px;
+
+    @media (min-width: $small-min-width) and (max-width: $small-max-width) {
+      width: 280px;
+    }
+
+    @media (min-width: $medium-min-width) and (max-width: $medium-max-width) {
+      width: 280px;
+    }
+
+    &:not(:last-child) {
+      margin-right: 82px;
+
+      @media (min-width: $small-min-width) and (max-width: $small-max-width) {
+        margin-right: 0;
+        margin-bottom: 40px;
+      }
+
+      @media (min-width: $medium-min-width) and (max-width: $medium-max-width) {
+        margin-right: 22px;
+      }
+    }
+
+    &-img {
+      margin-bottom: 66px;
+      width: 85px;
+      height: 75px;
+    }
+
+    &-title {
+      margin-bottom: 30px;
+      width: 328px;
+      font-family: Roboto;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 34px;
+      text-align: center;
+      color: white;
+
+      @media (min-width: $small-min-width) and (max-width: $small-max-width) {
+        margin: 0 auto 20px;
+        font-size: 20px;
+        width: 210px;
+      }
+
+      @media (min-width: $medium-min-width) and (max-width: $medium-max-width) {
+        font-size: 20px;
+        width: 210px;
+      }
+    }
+
+    &-article {
+      width: 358px;
+      font-family: Roboto;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 26px;
+      text-align: center;
+      color: rgba(255, 255, 255, 0.5);
+
+      @media (min-width: $small-min-width) and (max-width: $small-max-width) {
+        margin: 0 auto;
+        width: 210px;
+      }
+
+      @media (min-width: $medium-min-width) and (max-width: $medium-max-width) {
+        width: 210px;
+      }
+    }
+  }
+}

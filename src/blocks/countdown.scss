@@ -1,0 +1,82 @@
+.countdown {
+  margin-left: 190px;
+  font-family: Roboto;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 50px;
+  letter-spacing: 0em;
+  color: white;
+
+  @media (min-width: $small-min-width) and (max-width: $small-max-width) {
+    margin-left: 0px;
+    text-align: center;
+  }
+
+  @media (min-width: $medium-min-width) and (max-width: $medium-max-width) {
+    margin-left: 60px;
+    text-align: left;
+  }
+
+  &__number {
+    margin-bottom: 218px;
+    padding-top: 20px;
+    height: 112px;
+    width: 102px;
+    background: #121212;
+    display: inline-block;
+    text-align: center;
+
+    @media (min-width: $small-min-width) and (max-width: $small-max-width) {
+      margin-bottom: 20px;
+      padding-top: 0;
+      height: 80px;
+      width: 60px;
+    }
+
+    @media (min-width: $medium-min-width) and (max-width: $medium-max-width) {
+    }
+  }
+
+  &-time {
+    font-family: Roboto;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 10px;
+    letter-spacing: 0em;
+    text-align: center;
+
+    @media (min-width: $small-min-width) and (max-width: $small-max-width) {
+      font-size: 26px;
+      font-weight: 700;
+    }
+
+    @media (min-width: $medium-min-width) and (max-width: $medium-max-width) {
+    }
+  }
+
+  &-text {
+    display: block;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #ffffff;
+    opacity: 0.4;
+
+    @media (min-width: $small-min-width) and (max-width: $small-max-width) {
+      overflow: hidden;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 15px;
+    }
+
+    @media (min-width: $medium-min-width) and (max-width: $medium-max-width) {
+    }
+  }
+}

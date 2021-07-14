@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en" class="page">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link
+      rel="shortcut icon"
+      href="./src/images/icon.png"
+      type="image/x-icon"
+    >
+    <title>Computer Courses</title>
+  </head>
+  <body class="page__body">
+
+
+    <header class="header" id="Home">
+      <div class="container">
+        <nav class="nav">
+          <a href="#Course" class="nav__logo">
+            <img
+              src="./src/images/nav_logo.png"
+              alt="logo"
+              class="nav__logo-img"
+            >
+          </a>
+          <div class="nav__menu">
+            <a href="#Home" class="nav__menu-link">
+              Главная
+            </a>
+            <a href="#About" class="nav__menu-link">
+              Курсы
+            </a>
+            <a href="Programm" class="nav__menu-link">
+              Расписание
+            </a>
+            <a href="#Mentors" class="nav__menu-link">
+              Преподаватели
+            </a>
+            <a href="#Subscribe" class="nav__menu-link">
+              Рассылка
+            </a>
+            <a href="#Contact" class="nav__menu-link">
+              Контакты
+            </a>
+          </div>
+          <a href="" class="nav__button">
+            <p class="nav__button-text">Зайти в кабинет</p>
+          </a>
+        </nav>
+
+        <div class="header__title">
+          <a href="#About" class="header__title-link">
+            Первый курс 
+            <br class="header__title-link--opacity">
+             по компьютерной сборке
+          </a>
+        </div>
+
+        <div id="countdown" class="countdown">
+          <div class="countdown__number">
+            <span class="days countdown-time"></span>
+            <span class="countdown-text">Дней</span>
+          </div>
+          <div class="countdown__number">
+            <span class="hours countdown-time"></span>
+            <span class="countdown-text">Часов</span>
+          </div>
+          <div class="countdown__number">
+            <span class="minutes countdown-time"></span>
+            <span class="countdown-text">Минут</span>
+          </div>
+          <div class="countdown__number">
+            <span class="seconds countdown-time"></span>
+            <span class="countdown-text">Секунд</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="bar">
+        <div class="bar__container">
+          <a 
+            id="Course"
+            href="" 
+            class="bar__button"
+          >
+            Заказать курс
+          </a>
+          <ul class="bar__info">
+            <li class="bar__info-item">
+              <span class="bar__info-item--opacity">Учеников всего:</span>
+              <span class="bar__info-item-number">
+                200
+              </span>
+            </li>
+            <li class="bar__info-item">
+              <span class="bar__info-item--opacity">Успешно закончили курс:</span>
+              <span class="bar__info-item-number">
+                190
+              </span>
+            </li>
+          </ul>
+          <ul class="bar__progress">
+            <li class="bar__progress-item">
+              <span class="bar__progress-item--opacity">
+                Заработано учениками:
+              </span>
+              <span class="bar__progress-item-number">
+                400 000$
+              </span>
+            </li>
+            <li class="bar__progress-item">
+              <div class="bar__progress-line">
+                <div id="myBar" class="bar__progress-line-myBar"></div>
+              </div>
+            </li>
+            <li class="bar__progress-item bar__progress-item--width">
+              <span class="bar__progress-item-money">
+                <span class="bar__progress-item--opacity">
+                  0
+                </span>
+              </span>
+              <span class="bar__progress-item-money">
+                1 000 000$
+              </span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </header>
+
+    <main class="main">
+
+      <div class="container">
+        <div class="about" id="About">
+          <div class="about__block">
+            <img
+              class="about__block-img"
+              src="./src/images/pc.png"
+              alt="system unit"
+            >
+          </div>
+
+          <div class="about__info">
+            <a href="#Start" class="about__info-title">
+              Чем мы занимаемся?
+            </a>
+
+            <p class="about__info-article">
+              Если вы до сих пор гадаете, что же лучше, собрать компьютер самому или купить готовый, то, на наш взгляд,
+              ответ очевиден. ПК, собранный своими руками не только сэкономит вам кучу денег, но и принесет намного
+              больше
+              эстетического удовольствия. Да, это займет больше времени, чем просто прийти в магазин и купить готовое
+              решение, зато вы сможете подобрать комплектующие исключительно под ваши нужды.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="start" id="Start">
+          <span class="start__logo">
+            <img
+              class="start__logo-img"
+              src="./src/images/Ellipse.png"
+              alt="logo"
+            >
+          </span>
+          <span class="start__title">
+            Быстрый старт
+          </span>
+          <div class="start__description">
+            Больше 90% учеников прошли полный курс и смогли собрать свой первый компьютер
+          </div>
+
+          <div class="start__cards">
+            <div class="start__card">
+              <div class="start__card-status">
+                100%
+              </div>
+              <div class="start__card-visual"></div>
+              <p class="start__card-article">
+                Основные компоненты ПК. Терминология. Шины, внешние интерфейсы. Общий принцип работы и взаимодействия
+                составляющих устройств. Основы драйверов.
+              </p>
+            </div>
+
+            <div class="start__card">
+              <div class="start__card-status">
+                75%
+              </div>
+              <div class="start__card-visual start__card-visual--2"></div>
+              <p class="start__card-article">
+                ДОС, основные команды, различные способы загрузки в ОС ДОС. Эмуляция режима ДОС. Создание и настройка
+                ярлыков для ДОС приложений. Создание загрузочных дискет, основы BIOS. Назначение файлов autoexec.bat и
+                config.sys
+              </p>
+            </div>
+
+            <div class="start__card">
+              <div class="start__card-status">
+                50%
+              </div>
+              <div class="start__card-visual start__card-visual--3"></div>
+              <p class="start__card-article">
+                Характеристика микропроцессоров различных поколений. Форм факторы. Наличие и размер Кэш памяти.
+                Частотные характеристики. Охлаждение. Типы и разновидности охлаждающих систем.
+              </p>
+            </div>
+
+            <div class="start__card">
+              <div class="start__card-status">
+                Итог
+              </div>
+              <div class="start__card-visual start__card-visual--4"></div>
+              <p class="start__card-article">
+                Слушатель по окончании будет специалистом-профессионалом по сборке, настройке, обслуживанию, диагностике
+                неисправностей компьютерных систем .
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="description">
+          <h2 class="description__title">
+            Получите профессию прямо сейчас
+          </h2>
+
+          <div class="description__cards">
+            <div class="description__card">
+              <img
+                src="./src/images/computer.png"
+                alt="computer picture"
+                class="description__card-img"
+              >
+
+              <h3 class="description__card-title">
+                Только практические навыки в работе
+              </h3>
+
+              <p class="description__card-article">
+                Занятия по дисциплине "Сборка и устройство ПК" обеспечивают гарантированную подготовку специалистов по
+                сборке, настройке, обслуживанию семейства IBM PC и операционной системы Windows.
+              </p>
+            </div>
+
+            <div class="description__card">
+              <img
+                src="./src/images/flesh.png"
+                alt="flash drive picture"
+                class="description__card-img"
+              >
+
+              <h3 class="description__card-title">
+                Работа на самом
+                современном оборудовании
+              </h3>
+
+              <p class="description__card-article">
+                Курс ремонта и сборки компьютеров, который приготовили для своих слушателей наши педагоги происходит на
+                современном оборудовании.
+              </p>
+            </div>
+
+            <div class="description__card">
+              <img
+                src="./src/images/usb.png"
+                alt="USB picture"
+                class="description__card-img"
+              >
+
+              <h3 class="description__card-title">
+                Сертификация
+                по окончании обучения
+              </h3>
+
+              <p class="description__card-article">
+                Сертификация от Google научит вас выполнять повседневные задачи ИТ-поддержки, включая сборку
+                компьютеров, беспроводную сеть, установку программ и обслуживание клиентов.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="partners">
+          <img
+            class="partners__img"
+            src="./src/images/Elipse-1.png"
+            alt="logo"
+          >
+          <h3 class="partners__title">
+            Партнеры - топовые бренды
+          </h3>
+          <div class="partners__brands">
+            <div class="partners__brands-block">
+              <img
+                class="partners__brands-img"
+                src="./src/images/windows.png"
+                alt="windows logo"
+              >
+            </div>
+            <div class="partners__brands-block">
+              <img
+                class="partners__brands-img"
+                src="./src/images/msi.png"
+                alt="msi logo"
+              >
+            </div>
+            <div class="partners__brands-block">
+              <img
+                class="partners__brands-img"
+                src="./src/images/intel.png"
+                alt="intel logo"
+              >
+            </div>
+            <div class="partners__brands-block">
+              <img
+                class="partners__brands-img"
+                src="./src/images/sumsung.png"
+                alt="samsung logo"
+              >
+            </div>
+            <div class="partners__brands-block">
+              <img
+                class="partners__brands-img"
+                src="./src/images/RTX.png"
+                alt="Geforce RTX logo"
+              >
+            </div>
+            <div class="partners__brands-block">
+              <img
+                class="partners__brands-img"
+                src="./src/images/ryzen.png"
+                alt="Ryzen logo"
+              >
+            </div>
+            <div class="partners__brands-block">
+              <img
+                class="partners__brands-img"
+                src="./src/images/aorus.png"
+                alt="aourus logo"
+              >
+            </div>
+            <div class="partners__brands-block">
+              <img
+                class="partners__brands-img"
+                src="./src/images/AMD.png"
+                alt="AMD logo"
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="education" id="Programm">
+          <img
+            class="education__logo"
+            src="./src/images/Elipse-3.png"
+            alt="logo"
+          >
+
+          <p class="education__title">
+            Программа обучения
+          </p>
+
+          <article class="education__article">
+            Передовая программа обучения по сборке компьютеров и установке оборудования.
+          </article>
+
+          <div class="education__block">
+            <div class="education__block-left">
+
+              <div class="card">
+                <h4 class="card__title">
+                  Неделя №1
+                </h4>
+                <article class="card__article">
+                  Тема: Структура ПК
+                </article>
+                <span class="card__article-line"></span>
+              </div>
+
+
+              <div class="card">
+                <h4 class="card__title">
+                  Неделя №3
+                </h4>
+                <article class="card__article">
+                  Тема: MS-DOS
+                </article>
+                <span class="card__article-line"></span>
+              </div>
+
+              <div class="card">
+                <h4 class="card__title">
+                  Неделя №5
+                </h4>
+                <article class="card__article">
+                  Тема: Оперативное память
+                </article>
+                <span class="card__article-line"></span>
+              </div>
+
+              <div class="card">
+                <h4 class="card__title">
+                  Неделя №7
+                </h4>
+                <article class="card__article">
+                  Тема: Сборка IBM ПК
+                </article>
+                <span class="card__article-line"></span>
+              </div>
+            </div>
+            <div class="education__timeline"></div>
+            <div class="education__block-right">
+
+              <div class="card">
+                <h4 class="card__title">
+                  Неделя №2
+                </h4>
+                <span class="card__article-line"></span>
+                <article class="card__article">
+                  Тема: Жесткий диск
+                </article>
+              </div>
+
+              <div class="card">
+                <h4 class="card__title">
+                  Неделя №3
+                </h4>
+                <span class="card__article-line"></span>
+                <article class="card__article">
+                  Тема: Материнская плата
+                </article>
+              </div>
+
+              <div class="card">
+                <h4 class="card__title">
+                  Неделя №4
+                </h4>
+                <span class="card__article-line"></span>
+                <article class="card__article">
+                  Тема: BIOS
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="mentors" id="Mentors">
+          <img
+            class="mentors__logo"
+            src="./src/images/Elipse-2.png"
+            alt="logo"
+          >
+
+          <h3 class="mentors__title">
+            Ваши преподаватели
+          </h3>
+
+          <div class="mentors__cards">
+            <div class="mentors__cards-person">
+              <img 
+                src="./src/images/mentor-1.png"
+                alt="man in black T-shirt"
+                class="mentors__cards-person-photo"
+              >
+              <h4 class="mentors__cards-person-name">
+                Дмитрий Иванов
+              </h4>
+              <article class="mentors__cards-person-profession">
+                Специалист по видеокартам
+              </article>
+              <a href="#Mentors" class="mentors__cards-person-bio">
+                Биография
+              </a>
+            </div>
+
+            <div class="mentors__cards-person">
+              <img
+                src="./src/images/mentor-2.png"
+                alt="man with scarf"
+                class="mentors__cards-person-photo"
+              >
+              <h4 class="mentors__cards-person-name">
+                Иван Петров
+              </h4>
+              <article class="mentors__cards-person-profession">
+                Специалист по процессорам
+              </article>
+              <a href="#Mentors" class="mentors__cards-person-bio">
+                Биография
+              </a>
+            </div>
+
+            <div class="mentors__cards-person">
+              <img
+                src="./src/images/mentor-3.png"
+                alt="man in jacket"
+                class="mentors__cards-person-photo"
+              >
+              <h4 class="mentors__cards-person-name">
+                Сергей Бобров
+              </h4>
+              <article class="mentors__cards-person-profession">
+                Специалист по кулерам
+              </article>
+              <a href="#Mentors" class="mentors__cards-person-bio">
+                Биография
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="subscribe" id="Subscribe">
+          <h4 class="subscribe__title">
+            Статьи каждую неделю
+          </h4>
+          <article class="subscribe__article">
+            Кажудю неделю присылаем статьи с полезными аспектами по сборке компьюетров.
+          </article>
+          <form
+            class="subscribe__form"
+            action="#"
+            method="POST"
+          >
+            <div class="subscribe__form-container">
+              <input
+                type="email"
+                name="email"
+                class="subscribe__form-email"
+                placeholder="Email"
+                required
+              >
+              <a href="#">
+                <input
+                  type="submit"
+                  class="subscribe__form-button"
+                  value="Подписаться"
+                >
+                </input>
+              </a>
+            </div>
+          </form>
+          <div class="subscribe__social">
+            <a
+              href="https://www.instagram.com/"
+              class="subscribe__social-link"
+              target="blank"
+            >
+              <img
+                src="./src/images/instagram.png"
+                alt="instagram logo"
+                class="subscribe__social-link-image subscribe__social-link-image--size"
+                >
+            </a>
+            <a
+              href="https://www.facebook.com/"
+              class="subscribe__social-link"
+              target="blank"
+            >
+              <img
+                src="./src/images/facebook.png"
+                alt="facebook logo"
+                class="subscribe__social-link-image"
+              >
+            </a>
+            <a
+              href="https://vk.com/"
+              class="subscribe__social-link"
+              target="blank"
+            >
+              <img
+                src="./src/images/vk.png"
+                alt="vkontakte logo"
+                class="subscribe__social-link-image"
+              >
+            </a>
+            <a
+              href="https://www.youtube.com/"
+              class="subscribe__social-link"
+              target="blank"
+            >
+              <img
+                src="./src/images/youtube.png"
+                alt="youtube logo"
+                class="subscribe__social-link-image"
+              >
+            </a>
+          </div>
+          <a
+            href="tel:+380 000 00 00"
+            class="subscribe__contact"
+            id="Contact"
+          >
+            +380 000 00 00
+          </a>
+          <a
+            href="tel:+380 000 00 01"
+            class="subscribe__contact"
+          >
+            +380 000 00 01
+          </a>
+        </div>
+      </div>
+    </main>
+
+    <script src="./src/index.js"></script>
+  </body>
+</html>

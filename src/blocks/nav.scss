@@ -1,0 +1,107 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1920px;
+
+  @media (min-width: $small-min-width) and (max-width: $small-max-width) {
+    flex-direction: column;
+  }
+
+  &__logo {
+    transition: transform 0.3s linear;
+
+    &:hover {
+      transform: skewX(10deg);
+    }
+
+    @media (min-width: $small-min-width) and (max-width: $small-max-width) {
+      display: none;
+    }
+
+    @media (min-width: $medium-min-width) and (max-width: $medium-max-width) {
+      padding-right: 10px;
+    }
+  }
+
+  &__menu {
+    @media (min-width: $small-min-width) and (max-width: $small-max-width) {
+      display: flex;
+      flex-wrap: wrap;
+      padding-bottom: 40px;
+      text-align: left;
+      justify-content: space-between;
+    }
+
+    @media (min-width: $medium-min-width) and (max-width: $medium-max-width) {
+      padding-right: 10px;
+      overflow-y: hidden;
+    }
+
+    &-link {
+      font-family: Roboto;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 24px;
+      letter-spacing: 0em;
+      transition: color 0.3s linear;
+
+      @media (min-width: $small-min-width) and (max-width: $small-max-width) {
+      }
+
+      @media (min-width: $medium-min-width) and (max-width: $medium-max-width) {
+      }
+
+      &:hover {
+        color: #7c6afa;
+      }
+
+      &:not(:last-child) {
+        padding-right: 56px;
+
+        @media (min-width: $small-min-width) and (max-width: $small-max-width) {
+          text-align: left;
+          padding: 0;
+        }
+
+        @media (min-width: $medium-min-width) and (max-width: $medium-max-width) {
+          padding: 10px;
+        }
+      }
+
+      &:last-child {
+        @media (min-width: $medium-min-width) and (max-width: $medium-max-width) {
+          padding: 10px;
+        }
+      }
+    }
+  }
+
+  &__button {
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(94.26deg, #c89afc 9.51%, #7c6afa 90.23%);
+    border-radius: 50px;
+    min-width: 183px;
+    height: 44px;
+    text-align: center;
+    align-items: center; 
+
+    @media (min-width: $medium-min-width) and (max-width: $medium-max-width) {
+      min-width: 129px;
+      padding: 5px 5px;
+    }
+
+    &-text {
+      transition: transform 0.3s linear;
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+
+    &:hover {
+      background: linear-gradient(94.26deg, #9ac77d 9.51%, #ee5c88 90.23%);
+    }
+  }
+}

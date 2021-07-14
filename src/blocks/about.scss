@@ -1,0 +1,118 @@
+.about {
+  display: flex;
+  margin: 0 auto;
+  width: 1331px;
+  margin-top: 160px;
+
+  @media (min-width: $small-min-width) and (max-width: $small-max-width) {
+    flex-direction: column;
+    margin-top: 70px;
+    max-width: 280px;
+  }
+
+  @media (min-width: $medium-min-width) and (max-width: $medium-max-width) {
+    margin: 100px auto;
+    max-width: 700px;
+  }
+
+  &__block {
+    margin-bottom: 203px;
+    background-image: url(/src/images/square.png);
+    background-size: contain;
+    height: 499px;
+    width: 526px;
+    border-radius: 0px;
+    overflow: hidden;
+
+    @media (min-width: $small-min-width) and (max-width: $small-max-width) {
+      margin-bottom: 30px;
+      height: 240px;
+      max-width: 250px;
+    }
+
+    @media (min-width: $medium-min-width) and (max-width: $medium-max-width) {
+      height: 260px;
+      width: 270px;
+    }
+
+    &-img {
+      position: relative;
+      top: 50px;
+      left: 40px;
+
+      @media (min-width: $small-min-width) and (max-width: $small-max-width) {
+        top: 30px;
+        height: 206px;
+        width: 206px;
+      }
+
+      @media (min-width: $medium-min-width) and (max-width: $medium-max-width) {
+        top: 30px;
+        left: 25px;
+        height: 226px;
+        width: 226px;
+      }
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    width: 636px;
+    margin-left: 134px;
+
+    @media (min-width: $small-min-width) and (max-width: $small-max-width) {
+      width: 280px;
+      margin-left: 0;
+    }
+
+    @media (min-width: $medium-min-width) and (max-width: $medium-max-width) {
+      width: 336px;
+      margin-left: 50px;
+    }
+
+    &-title {
+      overflow-y: hidden;
+      margin-bottom: 45px;
+      font-family: Roboto;
+      font-size: 48px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 67px;
+      letter-spacing: 0em;
+      text-align: left;
+
+      transition: color 0.3s linear;
+
+      &:hover {
+        color: #7c6afa;
+      }
+
+      @media (min-width: $small-min-width) and (max-width: $small-max-width) {
+        margin-bottom: 25px;
+        font-size: 28px;
+        line-height: 27px;
+      }
+
+      @media (min-width: $medium-min-width) and (max-width: $medium-max-width) {
+        font-size: 40px;
+        line-height: 50px;
+      }
+    }
+
+    &-article {
+      font-family: Roboto;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 26px;
+      letter-spacing: 0em;
+      text-align: left;
+      color: white;
+
+      @media (min-width: $small-min-width) and (max-width: $small-max-width) {
+        margin-bottom: 45px;
+      }
+    }
+  }
+}
